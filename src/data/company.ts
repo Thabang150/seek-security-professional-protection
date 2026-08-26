@@ -249,13 +249,9 @@ export const differentiators = [
   },
 ];
 
-export const serviceAreas = [
-  "Pierre van Ryneveld",
-  "Centurion",
-  "Irene",
-  "Rooihuiskraal",
-  "Eldoraigne",
-  "Lyttelton",
-  "Wierdapark",
-  "Highveld",
-];
+/* Only areas supported by the company's own information: the base of
+ * operations, plus the stated intention to expand nationally. */
+export const serviceAreas = {
+  base: "Pierre van Ryneveld, Centurion",
+  note: "Our office and control room are based in Pierre van Ryneveld, Centurion. Deployments outside this area are arranged directly with our team — call the control room to confirm cover for your address or site.",
+};
