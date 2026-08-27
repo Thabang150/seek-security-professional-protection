@@ -10,7 +10,7 @@ export const Route = createFileRoute("/sitemap.xml")({
         const origin = new URL(request.url).origin;
         const paths = [...staticPaths, ...services.map((s) => `/services/${s.slug}`)];
         const body = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${paths
   .map(
     (p) =>
