@@ -8,6 +8,7 @@ import seek7 from "@/assets/seek7.jpg.asset.json";
 import seek8 from "@/assets/seek8.jpg.asset.json";
 import seek9 from "@/assets/seek9.jpg.asset.json";
 import logo from "@/assets/seek-logo.svg.asset.json";
+import hero from "@/assets/seek-hero.jpg.asset.json";
 
 export const company = {
   name: "Seek Security",
@@ -35,6 +36,7 @@ export const whatsappLink = (message?: string) =>
   }`;
 
 export const images = {
+  hero,
   team: seek2,
   tacticalTraining: seek3,
   medicalScene: seek1,

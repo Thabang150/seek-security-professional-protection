@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { initAnalytics, trackPageView } from "@/lib/analytics";
 
 function NotFoundComponent() {
@@ -157,6 +158,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </QueryClientProvider>
   );
 }
