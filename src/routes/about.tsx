@@ -25,6 +25,15 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
+const gallery = [
+  { src: images.tacticalTraining.url, alt: "Seek Security tactical training exercise" },
+  { src: images.nightResponse.url, alt: "Seek Security response vehicle on scene at night" },
+  { src: images.medicalScene.url, alt: "Seek Security medical response on scene" },
+  { src: images.fleetSunset.url, alt: "Seek Security response fleet at sunset" },
+  { src: images.communityEvent.url, alt: "Seek Security officers at a community event" },
+  { src: images.emergencyScene.url, alt: "Seek Security working alongside emergency services" },
+];
+
 function AboutPage() {
   return (
     <>
@@ -83,6 +92,25 @@ function AboutPage() {
                   <h3 className="text-lg">{d.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d.body}</p>
                 </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section pt-0">
+        <div className="container-x">
+          <span className="eyebrow text-primary">In the field</span>
+          <h2 className="mt-4 text-3xl sm:text-4xl">Our people at work</h2>
+          <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+            {gallery.map((g, i) => (
+              <Reveal key={g.src} delay={i * 40}>
+                <img
+                  src={g.src}
+                  alt={g.alt}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full bg-card object-cover"
+                />
               </Reveal>
             ))}
           </div>

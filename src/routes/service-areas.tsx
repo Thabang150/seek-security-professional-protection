@@ -42,7 +42,7 @@ function ServiceAreasPage() {
         <div className="container-x grid gap-10 md:grid-cols-12">
           <div className="md:col-span-6">
             <h2 className="text-2xl">Base of operations</h2>
-            <p className="mt-4 flex gap-3 text-sm leading-relaxed text-muted-foreground">
+            <div className="mt-4 flex gap-3 text-sm leading-relaxed text-muted-foreground">
               <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
               <address className="not-italic">
                 {company.address.street}
@@ -51,7 +51,7 @@ function ServiceAreasPage() {
                 <br />
                 {company.address.country}
               </address>
-            </p>
+            </div>
             <a
               href={`tel:${company.controlRoom.tel}`}
               onClick={() => trackEvent("phone_click", { location: "service_areas" })}
