@@ -36,6 +36,7 @@ export const whatsappLink = (message?: string) =>
   }`;
 
 export const images = {
+  hero,
   team: seek2,
   tacticalTraining: seek3,
   medicalScene: seek1,

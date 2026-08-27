@@ -21,8 +21,8 @@ export const Route = createFileRoute("/")({
         content:
           "Professional, family-run private security from Pierre van Ryneveld, Centurion. Control room 24/7.",
       },
-      { property: "og:image", content: images.nightResponse.url },
-      { name: "twitter:image", content: images.nightResponse.url },
+      { property: "og:image", content: images.hero.url },
+      { name: "twitter:image", content: images.hero.url },
     ],
     scripts: [
       {
@@ -54,8 +54,8 @@ function Home() {
     <>
       <section className="relative bg-ink text-ink-foreground">
         <img
-          src={images.nightResponse.url}
-          alt="Seek Security response vehicle and officers on duty at night"
+          src={images.hero.url}
+          alt="Seek Security response vehicles and officers deployed at a residential property"
           className="absolute inset-0 size-full object-cover opacity-35"
         />
         <div className="relative container-x py-24 md:py-32">
