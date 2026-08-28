@@ -1,14 +1,27 @@
-import seek1 from "@/assets/seek1.jpg.asset.json";
-import seek2 from "@/assets/seek2.jpg.asset.json";
-import seek3 from "@/assets/seek3.jpg.asset.json";
-import seek4 from "@/assets/seek4.jpg.asset.json";
-import seek5 from "@/assets/seek5.jpg.asset.json";
-import seek6 from "@/assets/seek6.jpg.asset.json";
-import seek7 from "@/assets/seek7.jpg.asset.json";
-import seek8 from "@/assets/seek8.jpg.asset.json";
-import seek9 from "@/assets/seek9.jpg.asset.json";
-import logo from "@/assets/seek-logo.svg.asset.json";
-import hero from "@/assets/seek-hero.jpg.asset.json";
+import seek1Src from "@/assets/seek1.jpg";
+import seek2Src from "@/assets/seek2.jpg";
+import seek3Src from "@/assets/seek3.jpg";
+import seek4Src from "@/assets/seek4.jpg";
+import seek5Src from "@/assets/seek5.jpg";
+import seek6Src from "@/assets/seek6.jpg";
+import seek7Src from "@/assets/seek7.jpg";
+import seek8Src from "@/assets/seek8.jpg";
+import seek9Src from "@/assets/seek9.jpg";
+import logoSrc from "@/assets/seek-logo.svg";
+import heroSrc from "@/assets/seek-hero.jpg";
+
+const seek1 = { url: seek1Src };
+const seek2 = { url: seek2Src };
+const seek3 = { url: seek3Src };
+const seek4 = { url: seek4Src };
+const seek5 = { url: seek5Src };
+const seek6 = { url: seek6Src };
+const seek7 = { url: seek7Src };
+const seek8 = { url: seek8Src };
+const seek9 = { url: seek9Src };
+const logo = { url: logoSrc };
+const hero = { url: heroSrc };
+
 
 export const company = {
   name: "Seek Security",
